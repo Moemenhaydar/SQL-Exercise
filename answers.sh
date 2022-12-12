@@ -30,3 +30,15 @@ Create graduates tabel
     WHERE Name = "Layal";
 4-DELETE FROM students
 WHERE name="Layal"
+
+Join
+----------
+1-CREATE TABLE information AS
+	SELECT employees.Name, companies.Name, companies.Date
+	FROM employees JOIN companies
+	On employees.Company = companies.Name;
+2-SELECT Name FROM information
+	WHERE Date < 2000;
+3-SELECT Company FROM employees
+	WHERE Role = "Graphic Designer";
+
