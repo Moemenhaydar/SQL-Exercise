@@ -42,3 +42,14 @@ Join
 3-SELECT Company FROM employees
 	WHERE Role = "Graphic Designer";
 
+Count and filter
+------------------
+1-SELECT name FROM students
+	WHERE Points = (SELECT MAX(Points) FROM students);
+2-SELECT AVG(Points) FROM students;
+3-SELECT COUNT(1) FROM students
+	WHERE Points = 500;
+4-SELECT * FROM students
+	WHERE Name LIKE "%s%";
+5-SELECT * FROM students
+	ORDER BY Points DESC;
